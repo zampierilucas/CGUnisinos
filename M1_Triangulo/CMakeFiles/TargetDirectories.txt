@@ -1,0 +1,3 @@
+/Users/lzampier/Documents/cubo/M1_Triangulo/CMakeFiles/app.dir
+/Users/lzampier/Documents/cubo/M1_Triangulo/CMakeFiles/edit_cache.dir
+/Users/lzampier/Documents/cubo/M1_Triangulo/CMakeFiles/rebuild_cache.dir
