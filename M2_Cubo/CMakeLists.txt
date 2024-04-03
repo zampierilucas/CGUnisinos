@@ -1,13 +1,16 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.29)
 
 # Generate file for LSP
 set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
-project(CUbo)
+project(Cubo)
 
 # All source files
 file(GLOB SRC_FILES Cubo/*.cpp)
 file(GLOB SRC_FILES_C src/*.c)
+
+# Add the GLM include directorie
+include_directories(/opt/homebrew/Cellar/glm/1.0.1/include/)
 
 add_executable(app ${SRC_FILES} ${SRC_FILES_C})
 

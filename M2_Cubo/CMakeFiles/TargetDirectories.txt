@@ -1,3 +1,0 @@
-/Users/lzampier/Documents/cubo/M2_Cubo/CMakeFiles/app.dir
-/Users/lzampier/Documents/cubo/M2_Cubo/CMakeFiles/edit_cache.dir
-/Users/lzampier/Documents/cubo/M2_Cubo/CMakeFiles/rebuild_cache.dir
