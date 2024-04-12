@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.29)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
-project(Testuras)
+project(Texturas)
 
 # All source files
-file(GLOB SRC_FILES Testuras/*.cpp)
-file(GLOB SRC_FILES_C src/*.c)
+file(GLOB SRC_FILES Texturas/*.cpp)
+file(GLOB SRC_FILES_C ../src/*.c)
 
 # Add the GLM include directori
 include_directories(/opt/homebrew/Cellar/glm/1.0.1/include/)
@@ -25,4 +25,4 @@ set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl -lpthread")
 find_package(glfw3 3.3 REQUIRED)
 target_link_libraries(app glfw)
 
-include_directories("include")
+include_directories("../include")
