@@ -108,9 +108,9 @@ int main()
 
 	// Compilando e buildando o programa de shader
 	//GLuint shader.ID = setupShader();
-	Shader shader("Phong.vs","Phong.fs");
+	Shader shader("iluminacao/Phong.vs", "iluminacao/Phong.fs");
 
-	// glUseProgram(shader.ID);
+	glUseProgram(shader.ID);
 
 	//Matriz de view -- posi��o e orienta��o da c�mera
 	glm::mat4 view = glm::lookAt(glm::vec3(0.0, 0.0, 3.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
@@ -123,9 +123,9 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	int nVerts;
-	GLuint VAO = loadSimpleOBJ("../../3D_models/Suzanne/suzanneTriLowPoly.obj", nVerts, glm::vec3(0.0,1.0,1.0));
-	GLuint VAO2 = loadSimpleOBJ("../../3D_models/Suzanne/suzanneTriLowPoly.obj", nVerts);
-	GLuint VAO3 = loadSimpleOBJ("../../3D_models/Suzanne/suzanneTriLowPoly.obj", nVerts, glm::vec3(1.0, 1.0, 0.0));
+	GLuint VAO  = loadSimpleOBJ("../3D_models/spaceship.obj", nVerts, glm::vec3(0.0,1.0,1.0));
+	GLuint VAO2 = loadSimpleOBJ("../3D_models/Suzanne/suzanneTriLowPoly.obj", nVerts);
+	GLuint VAO3 = loadSimpleOBJ("../3D_models/Suzanne/suzanneTriLowPoly.obj", nVerts, glm::vec3(1.0, 1.0, 0.0));
 
 	Mesh suzanne1, suzanne2, suzanne3;
 	suzanne1.initialize(VAO, nVerts, &shader,glm::vec3(-2.75,0.0,0.0));
